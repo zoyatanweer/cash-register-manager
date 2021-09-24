@@ -31,8 +31,9 @@ body{
 }
 
 #bill-amount,#cash-given{
+    border-radius:0.5rem;
     font-size:1rem;
-    height:5vh;
+    height:6vh;
     width:100%;
 }
 
