@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- CSS File -->
+    <link href= "styles.css" rel="stylesheet">
+    <title>Cash Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">CASH REGISTER</h1>
+        <p class="description">
+            Enter the bill amount and cash given by the customer and know minimum number of notes to return. 
+        </p>
+        <label class="bill" for="bill-amount">Bill Amount:</label>
+        <input id="bill-amount" type="number" min=0 oninput="validity.valid||(value='');" />
+
+        <label class="bill" for="cash-given">Cash given:</label>
+        <input id="cash-given" type="number" min=0 oninput="validity.valid||(value='');" />
+
+        <button id="check-button">check</button>
+        <p id="message"></p>
+        <table class="change-table">
+            <caption>Return change</caption>
+            <tr>
+                <th>No. of notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+<footer>
+    <i class="far fa-copyright"></i>2021|zoyatanweer
+    <br>
+    <a class="link" href="https://github.com/zoyatanweer"><i class="footer-icon fab fa-2x fa-github"></i></a>
+    <a class="link" href="https://www.linkedin.com/in/zoya-tanweer-9440431b9"><i class="footer-icon fab fa-2x fa-linkedin-in"></i></a>
+    <a class="link" href="https://twitter.com/ItsZoya28"><i class="footer-icon fab fa-2x fa-twitter"></i></a>
+</footer>
+
+<!-- JS File -->
+<script src="index.js"></script>
+
+</body>
+</html>

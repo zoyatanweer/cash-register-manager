@@ -1,0 +1,75 @@
+body{
+    background-image: url("photo/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.7rem;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    font-weight:600;
+    margin: 2rem auto 3rem;
+    padding:2rem;
+    text-align: center;
+    width:50vw;
+}
+
+.heading{
+    font-size:4rem;
+    font-weight:900;
+    margin-top:1rem;
+    padding-top:1rem;
+    text-align:center;
+}
+
+.description, .bill{
+    margin:0 2rem 1rem;
+    padding:1rem;
+}
+
+#bill-amount,#cash-given{
+    font-size:1rem;
+    height:5vh;
+    width:100%;
+}
+
+#check-button{
+    background-color: #14213d;
+    border-radius:1rem;
+    color:white;
+    cursor:pointer;
+    font-size:1.4rem;
+    margin:1rem 0 0 14rem;
+    padding:0.5rem;
+    width: 30%;
+}
+
+table, th, td {
+    border: 3px solid white ;
+    border-collapse: collapse;
+    color:white;
+    height: 50px;
+    padding: 15px;
+    text-align:Center;
+    width:100%;
+}
+
+caption{
+    color:white;
+    margin:1rem;
+}
+
+footer{
+    font-size:1rem;
+    margin:1rem;
+    padding:1rem;
+    text-align:center;
+}
+
+.footer-icon{
+    margin:10px;
+    color:white;
+}
