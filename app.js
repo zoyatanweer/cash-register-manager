@@ -30,7 +30,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount(){
 
 })
 
-function calculateChange(amountReturn){
+const calculateChange = (amountReturn) => {
     for(let i = 0; i<availableNotes.length ; i++){
         const numberOfNotes =  Math.trunc( 
             amountReturn / availableNotes[i]
@@ -41,11 +41,9 @@ function calculateChange(amountReturn){
     }
 }
 
-function hideMessage(){
-    message.style.display = "none";
-}
+const hideMessage = () => message.style.display = "none";
 
-function showMessage(msg){
+const showMessage = (msg) =>{
     message.style.display="block";
     message.innerText = msg;
 }
